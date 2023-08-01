@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya&family=Montserrat:wght@600&family=Rubik&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*
+body {
+     background-color: rgb(197, 184, 184); 
+}
+*/
+/* ********************HOMEPAGE******************** */
+.c-header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 55% 35%;
+      grid-template-columns: 55% 35%;
+  height: 10vh;
+  /* background-color: rgb(0, 0, 0); */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.c-header__logo {
+  font-family: 'Alegreya', serif;
+  font-size: 60px;
+  color: #302f2f;
+}
+
+.c-header__navbar {
+  /* background-color: rgb(81, 75, 173); */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.c-header__menu {
+  /* background-color: rgb(104, 175, 169); */
+}
+
+.c-header__menu li {
+  display: inline;
+}
+
+.c-header__menu li a {
+  /* background-color: red; */
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  color: #454545;
+  margin: 0px 15px;
+  padding: 10px 5px;
+}
+
+.c-header__menu li a:hover {
+  color: black;
+}
+
+.c-main {
+  height: 90vh;
+  width: 100%;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.c-main__img {
+  background-image: url("../img/img_8.jpg");
+  background-size: 100%;
+  background-position: top center;
+  background-attachment: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Alegreya', serif;
+  font-size: 24px;
+  color: white;
+  height: 85vh;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* ********************GALERIA******************** */
+.c-galeria {
+  height: 90vh;
+  width: 4000px;
+  background-color: blanchedalmond;
+}
+/*# sourceMappingURL=style.css.map */
