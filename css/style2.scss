@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500&family=Montserrat:wght@600&family=Rubik&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* ********************GLOBAL******************** */
+
+.body {
+    font-size: 100%;
+}
+
+/* HEADER */
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 40px;
+    max-height: 10vh;
+}
+
+.header__logo {
+    margin-left: 100px;
+    font-family: 'Alegreya', serif;
+    font-size: 50px;
+    color: rgb(48, 47, 47);
+}
+
+.header__menu {
+    margin-left: 420px;
+    display: flex;
+    gap: 32px;
+    a {       
+        font-family: 'Alegreya', serif;
+        font-weight: 500;
+        font-size: 20px;
+        color: rgb(170, 34, 34);
+        &:hover {
+            color: rgb(48, 47, 47);
+        }
+    }
+}
+
+
+.header__menu__item {
+    
+}
+
+.header__menu__item--active {
+    color: rgb(48, 47, 47) !important;
+}
+
+/* ********************HOME******************** */
+
+.content {
+    
+}
+
+.content__main { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    
+}
+
+.content__main__bgimage {
+    object-fit: cover;
+    height: 75vh;
+    width: 75%;
+}
+
+.content__secondary {
+    height: 100vh;
+    border: 1px solid rgb(25, 0, 255);
+    
+}
+
+
+
+/* ********************GALERIA******************** */
+
+
