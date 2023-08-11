@@ -1,85 +1,130 @@
-@import url("https://fonts.googleapis.com/css2?family=Alegreya&family=Montserrat:wght@600&family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500&family=Montserrat:wght@600&family=Rubik&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
-/*
-body {
-     background-color: rgb(197, 184, 184); 
-}
-*/
-/* ********************HOMEPAGE******************** */
-.c-header {
-  display: grid;
-  grid-template-columns: 55% 35%;
-  height: 10vh;
-  /* background-color: rgb(0, 0, 0); */
-  align-items: center;
-  justify-content: center;
+/* ********************GLOBAL******************** */
+.body {
+  font-size: 100%;
 }
 
-.c-header__logo {
-  font-family: "Alegreya", serif;
-  font-size: 60px;
-  color: rgb(48, 47, 47);
-}
-
-.c-header__navbar {
-  /* background-color: rgb(81, 75, 173); */
+.header {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  position: absolute;
 }
-
-.c-header__menu {
-  /* background-color: rgb(104, 175, 169); */
+.header:hover .header__menu {
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
 }
-.c-header__menu li {
-  display: inline;
+.header__menu {
+  position: relative;
+  left: 470px;
+  display: flex;
+  padding: 0 2px;
+  gap: 32px;
 }
-.c-header__menu li a {
-  /* background-color: red; */
-  display: inline-block;
-  text-decoration: none;
-  font-family: Arial;
-  font-size: 14px;
-  color: rgb(69, 69, 69);
-  margin: 0px 15px;
-  padding: 10px 5px;
-}
-.c-header__menu li a:hover {
+.header__menu a {
+  font-family: "Alegreya", serif;
+  font-weight: 500;
+  font-size: 20px;
   color: rgb(0, 0, 0);
 }
-
-.c-main {
-  height: 90vh;
-  width: 100%;
-  background-color: rgb(255, 255, 255);
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+.header__menu a:hover {
+  color: rgb(121, 28, 28);
+}
+.header__menu__item--active {
+  color: rgb(121, 28, 28) !important;
+}
+.header__logo {
+  position: relative;
+  left: 85px;
+  font-family: "Alegreya", serif;
+  font-size: 50px;
+  color: rgb(167, 64, 64);
 }
 
-.c-main__img {
-  background-image: url("../img/img_8.jpg");
-  background-size: 100%;
-  background-position: top center;
-  background-attachment: scroll;
+/* ********************HOME******************** */
+.content {
+  border-top: 1px solid rgba(0, 0, 0, 0.075);
+}
+.content__main {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+}
+.content__main__bgimage {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 85vh;
+  width: 90%;
+}
+.content__main__caption {
+  position: relative;
+  font-size: 60px;
+  color: aliceblue;
+}
+.content__secondary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content__secondary__gallery {
+  display: flex;
+  padding: 2px;
+  transition: 0.3s;
+  justify-content: center;
+  margin-top: 50px;
+  width: 60%;
+}
+.content__secondary__gallery:hover .content__secondary__gallery__image {
+  filter: grayscale(1);
+}
+.content__secondary__gallery__column {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+}
+.content__secondary__gallery__link {
+  margin: 6px;
+  overflow: hidden;
+}
+.content__secondary__gallery__link:hover .content__secondary__gallery__image {
+  filter: grayscale(0);
+}
+.content__secondary__gallery__link:hover .content__secondary__gallery__caption {
+  opacity: 1;
+}
+.content__secondary__gallery__thumb {
+  position: relative;
+}
+.content__secondary__gallery__image {
+  display: block;
   width: 100%;
-  margin: 0 auto;
+  transition: 0.3s;
+}
+.content__secondary__gallery__image:hover {
+  transition: 1s;
+  transform: scale(1.1);
+}
+.content__secondary__gallery__caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 25px 15px 15px;
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  color: white;
+  opacity: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+  transition: 0.3s;
 }
 
-/* ********************GALERIA******************** */
-.c-galeria {
-  height: 90vh;
-  width: 4000px;
-  background-color: blanchedalmond;
-}/*# sourceMappingURL=style.css.map */
+/* ********************GALERIA******************** *//*# sourceMappingURL=style.css.map */
