@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500&family=Montserrat:wght@600&family=Rubik&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* ********************GLOBAL******************** */
+.body {
+  font-size: 100%;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+}
+.header:hover .header__menu {
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+}
+.header__menu {
+  position: relative;
+  left: 470px;
+  display: flex;
+  padding: 0 2px;
+  gap: 32px;
+}
+.header__menu a {
+  font-family: "Alegreya", serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}
+.header__menu a:hover {
+  color: rgb(121, 28, 28);
+}
+.header__menu__item--active {
+  color: rgb(121, 28, 28) !important;
+}
+.header__logo {
+  position: relative;
+  left: 85px;
+  font-family: "Alegreya", serif;
+  font-size: 50px;
+  color: rgb(167, 64, 64);
+}
+
+/* ********************HOME******************** */
+.content {
+  border-top: 1px solid rgba(0, 0, 0, 0.075);
+}
+.content__main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.content__main__bgimage {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 85vh;
+  width: 90%;
+}
+.content__main__caption {
+  position: relative;
+  font-size: 60px;
+  color: aliceblue;
+}
+.content__secondary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content__secondary__gallery {
+  display: flex;
+  padding: 2px;
+  transition: 0.3s;
+  justify-content: center;
+  margin-top: 50px;
+  width: 60%;
+}
+.content__secondary__gallery:hover .content__secondary__gallery__image {
+  filter: grayscale(1);
+}
+.content__secondary__gallery__column {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+}
+.content__secondary__gallery__link {
+  margin: 6px;
+  overflow: hidden;
+}
+.content__secondary__gallery__link:hover .content__secondary__gallery__image {
+  filter: grayscale(0);
+}
+.content__secondary__gallery__link:hover .content__secondary__gallery__caption {
+  opacity: 1;
+}
+.content__secondary__gallery__thumb {
+  position: relative;
+}
+.content__secondary__gallery__image {
+  display: block;
+  width: 100%;
+  transition: 0.3s;
+}
+.content__secondary__gallery__image:hover {
+  transition: 1s;
+  transform: scale(1.1);
+}
+.content__secondary__gallery__caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 25px 15px 15px;
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  color: white;
+  opacity: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+  transition: 0.3s;
+}
+
+/* ********************GALERIA******************** *//*# sourceMappingURL=style.css.map */
